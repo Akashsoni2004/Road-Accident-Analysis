@@ -1,0 +1,16 @@
+Year,State,Accidents,Persons_Killed,Persons_Injured,Cause,Vehicle_Type
+2019,Maharashtra,32000,15000,28000,Over Speeding,Two-Wheeler
+2019,Tamil Nadu,29000,14000,26000,Drunk Driving,Car
+2019,Uttar Pradesh,34000,17000,30000,Over Speeding,Truck
+2020,Maharashtra,28000,13000,24000,Signal Jumping,Two-Wheeler
+2020,Tamil Nadu,26000,12000,23000,Over Speeding,Car
+2020,Uttar Pradesh,30000,15000,27000,Drunk Driving,Bus
+2021,Maharashtra,35000,16000,31000,Over Speeding,Two-Wheeler
+2021,Tamil Nadu,33000,15500,29000,Signal Jumping,Car
+2021,Uttar Pradesh,36000,17500,32000,Over Speeding,Truck
+2022,Maharashtra,38000,18000,34000,Drunk Driving,Two-Wheeler
+2022,Tamil Nadu,36000,17000,32000,Over Speeding,Car
+2022,Uttar Pradesh,40000,19500,36000,Over Speeding,Truck
+2023,Maharashtra,42000,20000,38000,Over Speeding,Two-Wheeler
+2023,Tamil Nadu,39000,18500,35000,Drunk Driving,Car
+2023,Uttar Pradesh,44000,22000,40000,Over Speeding,Truck
