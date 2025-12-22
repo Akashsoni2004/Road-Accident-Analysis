@@ -69,7 +69,7 @@ sns.barplot(x=cause_data.index, y=cause_data.values)
 plt.title("Cause-wise Road Accidents in India", fontsize=14)
 plt.xlabel("Cause")
 plt.ylabel("Number of Accidents")
-plt.xticks(rotation=90)
+plt.xticks(rotation=0)
 plt.show()
 
 
