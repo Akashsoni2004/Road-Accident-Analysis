@@ -6,7 +6,7 @@ import seaborn as sns
 # ---------------------------------------
 # Load Data
 # ---------------------------------------
-df = pd.read_csv("india_road_accidents.csv")
+df = pd.read_csv("road_accidents.csv")
 
 # ---------------------------------------
 # GRAPH 1: Year-wise Accidents Trend
@@ -54,8 +54,7 @@ vehicle_deaths = df.groupby("Vehicle_Type")["Persons_Killed"].sum()
 
 print("- Fig:3 shows Two-wheelers have highest fatality rate.")
 plt.figure()
-plt.pie(vehicle_deaths, labels=vehicle_deaths.index,
-        autopct='%1.1f%%', startangle=140)
+plt.pie(vehicle_deaths, labels=vehicle_deaths.index, autopct='%1.1f%%', startangle=140)
 plt.title("Proportion of Deaths by Vehicle Type", fontsize=14)
 plt.show()
 
@@ -70,7 +69,7 @@ sns.barplot(x=cause_data.index, y=cause_data.values)
 plt.title("Cause-wise Road Accidents in India", fontsize=14)
 plt.xlabel("Cause")
 plt.ylabel("Number of Accidents")
-plt.xticks(rotation=0)
+plt.xticks(rotation=90)
 plt.show()
 
 
