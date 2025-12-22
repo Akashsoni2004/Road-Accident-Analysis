@@ -32,6 +32,7 @@ comparison.plot(kind="bar", width=0.8)
 plt.title("Comparison of Accidents vs Deaths (India)", fontsize=14)
 plt.xlabel("Year")
 plt.ylabel("Count")
+plt.xticks(rotation=0)
 plt.show()
 
 # ---------------------------------------
