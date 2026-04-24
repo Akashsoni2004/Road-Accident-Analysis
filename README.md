@@ -2,9 +2,9 @@
 
 This mini project focuses on analyzing **road accident data in India** using Python and its data analysis libraries.  
 The goal of this project is to identify accident trends, major causes, and patterns through **data-driven insights and visualizations**.
-<br>
 
-## 📌 Project Objectives
+
+## Project Objectives
 
 - Analyze road accident statistics in India
 - Identify major causes and trends of accidents
@@ -12,18 +12,16 @@ The goal of this project is to identify accident trends, major causes, and patte
 - Visualize accident data for better understanding
 - Build problem-solving and data analysis skills using Python
 
-<br>
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python**
 - **NumPy**
 - **Pandas**
 - **Matplotlib**
 
-<br>
 
-## 📊 Features of the Project
+## Features of the Project
 
 - Reading accident data from CSV files
 - Data preprocessing and transformation
