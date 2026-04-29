@@ -3,14 +3,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# ---------------------------------------
-# Load Data
-# ---------------------------------------
+# reading csv file
 df = pd.read_csv("road_accidents.csv")
 
-# ---------------------------------------
-# GRAPH 1: Year-wise Accidents Trend
-# ---------------------------------------
+# Year-wise Accidents Trend
 yearly = df.groupby("Year")["Accidents"].sum()
 
 print("- Fig: 1 shows Road accidents are increasing over years.")
@@ -23,9 +19,7 @@ plt.grid(True)
 plt.show()
 
 
-# ---------------------------------------
-# GRAPH 2: Accident vs Death Comparison
-# ---------------------------------------
+# Accident vs Death Comparison
 comparison = df.groupby("Year")[["Accidents", "Persons_Killed"]].sum()
 
 comparison.plot(kind="bar", width=0.8)
@@ -35,9 +29,7 @@ plt.ylabel("Count")
 plt.xticks(rotation=0)
 plt.show()
 
-# ---------------------------------------
-# GRAPH 3: Top 5 Accident Prone States
-# ---------------------------------------
+# Top 5 Accident Prone States
 top_states = df.groupby("State")["Accidents"].sum().sort_values(ascending=False).head(5)
 
 print("- Fig:2 shows States contributing major accident in India.")
@@ -48,9 +40,7 @@ plt.xlabel("Total Accidents")
 plt.ylabel("State")
 plt.show()
 
-# ---------------------------------------
-# GRAPH 4: Death Proportion by Vehicle Type
-# ---------------------------------------
+# Death Proportion by Vehicle Type
 vehicle_deaths = df.groupby("Vehicle_Type")["Persons_Killed"].sum()
 
 print("- Fig:3 shows Two-wheelers have highest fatality rate.")
@@ -59,9 +49,7 @@ plt.pie(vehicle_deaths, labels=vehicle_deaths.index, autopct='%1.1f%%', startang
 plt.title("Proportion of Deaths by Vehicle Type", fontsize=14)
 plt.show()
 
-# ---------------------------------------
-# GRAPH 5: Cause-wise Accident Distribution
-# ---------------------------------------
+# Cause-wise Accident Distribution
 cause_data = df["Cause"].value_counts()
 
 print("- Fig:4 shows Speeding is the dominant cause of accidents.")
@@ -74,9 +62,7 @@ plt.xticks(rotation=0)
 plt.show()
 
 
-# ---------------------------------------
-# GRAPH 6: Fatality Rate Analysis
-# ---------------------------------------
+# Fatality Rate Analysis
 df["Fatality_Rate"] = (df["Persons_Killed"] / df["Accidents"]) * 100
 
 fatality_state = df.groupby("State")["Fatality_Rate"].mean().sort_values(ascending=False)
